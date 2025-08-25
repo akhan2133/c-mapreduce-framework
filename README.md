@@ -36,12 +36,13 @@ void mr_exec(
 // Emit intermediate kv pair from within map()
 void mr_emit_i(char *key, char *value);
 
-
 // Emit final kv pair from within reduce()
 void mr_emit_f(char *key, char *value);
 ```
 
-### Ordering
+---
+
+## Ordering
 - Preserves input order for map().
 - Groups intermediate key-value pairs by key and sorts by strcmp().
 - Final outputs also sorted by key (lexicographic).
@@ -57,7 +58,7 @@ void mr_emit_f(char *key, char *value);
 ("4", "jumps over the lazy dog")
 ```
 
-### Output (wiord count example)
+### Output (word count example)
 ```bash
 ("brown", "2")
 ("dog", "2")
@@ -101,4 +102,4 @@ make
 --- 
 
 ## License
-This project is licensed under the [MIT LICENSE](LICENSE)
+This project is licensed under the [MIT License](LICENSE)
