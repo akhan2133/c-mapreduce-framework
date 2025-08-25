@@ -41,9 +41,7 @@ void mr_emit_i(char *key, char *value);
 void mr_emit_f(char *key, char *value);
 ```
 
----
-
-## Ordering
+### Ordering
 - Preserves input order for map().
 - Groups intermediate key-value pairs by key and sorts by strcmp().
 - Final outputs also sorted by key (lexicographic).
@@ -103,4 +101,4 @@ make
 --- 
 
 ## License
-This project is licensed under [MIT LICENSE](LICENSE)
+This project is licensed under the [MIT LICENSE](LICENSE)
